@@ -1,0 +1,14 @@
+{{ define "main" -}}
+<div class="post">
+  <h1>Hi!</h1>
+  <p>
+  <p>Thanks for visiting this site and justifying me owning the domain name <a href="http://erinmckean.com">erinmckean.com</a>.</p>
+  <p>Most of the actually helpful information you might want you can find through the links in the sidebar, or you can just <a href="/contact">contact me</a>.</p>
+
+</div>
+
+{{ if .Site.DisqusShortname -}}
+<h2>Comments</h2>
+{{ template "_internal/disqus.html" . }}
+{{- end }}
+{{- end }}
